@@ -1,9 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
 
 const AnimatedText = ({ text }) => {
     const controls = useAnimation();
-    const [hovering, setHovering] = useState(false);
 
     const letterVariants = {
         roll: {
@@ -15,19 +13,13 @@ const AnimatedText = ({ text }) => {
     const containerVariants = {
         roll: {
             transition: {
-                staggerChildren: 0.05, // letters animate one after another
+                staggerChildren: 0.05,
             },
         },
     };
 
     const handleHoverStart = () => {
-        setHovering(true);
-        controls.start("roll"); // trigger rolling animation
-    };
-
-    const handleHoverEnd = () => {
-        setHovering(false);
-        // we don’t revert instantly, letters finish animation naturally
+        controls.start("roll");
     };
 
     return (
@@ -36,7 +28,6 @@ const AnimatedText = ({ text }) => {
             variants={containerVariants}
             animate={controls}
             onHoverStart={handleHoverStart}
-            onHoverEnd={handleHoverEnd}
         >
             {text.split("").map((letter, index) => (
                 <motion.span
@@ -50,9 +41,8 @@ const AnimatedText = ({ text }) => {
                     {letter === " " ? "\u00A0" : letter}
                 </motion.span>
             ))}
-
         </motion.span>
     );
 };
 
-export default AnimatedText
+export default AnimatedText;
