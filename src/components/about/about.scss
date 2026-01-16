@@ -1,0 +1,32 @@
+@import "../../styles/mixins.scss";
+
+.about-container {
+    width: 100%;
+    margin-bottom: 60px;
+
+
+    .about-info {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include laptop {
+            width: calc(100% - 160px);
+        }
+
+        @include tablet {
+            width: calc(100% - 200px);
+        }
+
+        @include landscape {
+            width: calc(100% - 140px);
+        }
+
+        @include mobile {
+            width: calc(100% - 80px);
+        }
+
+    }
+}

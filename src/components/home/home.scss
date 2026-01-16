@@ -1,0 +1,196 @@
+@import "../../styles/mixins.scss";
+
+.home-container {
+    max-width: 1600px;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    margin: auto;
+
+    @include laptop {
+        flex-direction: column;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        width: calc(100% - 20px);
+    }
+
+    @include landscape {
+        flex-direction: column;
+        width: calc(100% - 20px);
+    }
+
+    @include mobile {
+        flex-direction: column;
+        width: calc(100% - 20px);
+    }
+
+    .home-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            display: inline;
+        }
+
+        @include desktop {
+            margin-bottom: 60px;
+
+            h1 {
+                font-size: 2.6rem;
+                text-align: center;
+            }
+        }
+
+        @include laptop {
+            order: 2;
+            margin-bottom: 60px;
+
+            h1 {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        @include tablet {
+            order: 2;
+            margin-bottom: 60px;
+
+            h1 {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        @include landscape {
+            order: 2;
+            margin-bottom: 60px;
+
+            span {
+                display: block;
+            }
+
+            h1 {
+                width: 60%;
+                text-align: center;
+            }
+        }
+
+        @include mobile {
+            order: 2;
+            margin-bottom: 60px;
+
+            span {
+                display: block;
+            }
+
+            h1 {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+
+        p {
+            margin-top: 5px;
+            width: 64%;
+
+            @include desktop {
+                width: 83%;
+                text-align: center;
+            }
+
+            @include laptop {
+                width: 50%;
+                text-align: center;
+            }
+
+            @include tablet {
+                width: 50%;
+                text-align: center;
+            }
+
+            @include landscape {
+                width: 68%;
+                text-align: center;
+            }
+
+            @include mobile {
+                width: 75%;
+                text-align: center;
+            }
+        }
+
+        .home-info-links {
+            margin-top: 10px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                height: 100px;
+            }
+        }
+    }
+
+    .home-image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include laptop {
+            flex: 0.3;
+            margin-top: 40px;
+        }
+
+        @include tablet {
+            flex: 0.3;
+            margin-top: 40px;
+        }
+
+        @include landscape {
+            flex: 0.3;
+            margin-top: 40px;
+        }
+
+        @include mobile {
+            flex: 0.3;
+            margin-top: 40px;
+        }
+
+        img {
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+
+            @include laptop {
+                width: 250px;
+                height: 400px;
+            }
+
+            @include tablet {
+                width: 250px;
+                height: 400px;
+            }
+
+            @include landscape {
+                width: 250px;
+                height: 400px;
+            }
+
+            @include mobile {
+                width: 200px;
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import "../../styles/mixins.scss";
+
+#projects {
+    margin-bottom: 40px;
+
+    .projects-container {
+        .latest-project-container {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            margin-bottom: 40px;
+
+        }
+
+        .explore-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+
+
+        .remaining-projects-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            place-items: center;
+            margin: auto;
+
+            @include desktop {
+                grid-template-columns: 1fr;
+                place-items: unset;
+
+            }
+
+            @include laptop {
+                grid-template-columns: 1fr;
+                place-items: unset;
+
+            }
+
+            @include tablet {
+                grid-template-columns: 1fr;
+                place-items: unset;
+
+            }
+
+            @include landscape {
+                grid-template-columns: 1fr;
+                place-items: unset;
+            }
+
+            @include mobile {
+                grid-template-columns: 1fr;
+                place-items: unset;
+            }
+        }
+
+    }
+
+
+
+
+}
