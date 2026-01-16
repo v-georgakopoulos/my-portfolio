@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./navigation.scss";
-import { section } from "framer-motion/client";
 
 const tabs = [
     { id: 1, name: "home", href: "#home" },
