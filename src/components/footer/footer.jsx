@@ -8,7 +8,7 @@ const Footer = () => {
                     <a className="footer-link" href="https://github.com/v-georgakopoulos" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a
                         className="footer-link"
-                        href="mailto:v.georgakopoulos.dev@outlook.com"
+                        href="mailto:vasilisdev@outlook.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
