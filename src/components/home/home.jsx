@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import AnimatedText from "../animated-text/animated-text"
 import homeImage from "../../assets/profileImg.jpg"
+import VasilisGeorgakopoulosCv from "../../assets/Vasilis-Georgakopoulos-Cv.pdf"
 import "./home.scss"
 
 const containerVariants = {
@@ -71,8 +72,8 @@ const Home = () => {
                     </motion.a>
 
                     <motion.a
-                        href="CV.pdf"
-                        download
+                        href={VasilisGeorgakopoulosCv}
+                        download="VasilisGeorgakopoulos_CV.pdf"
                     >
                         <AnimatedText text="Download CV" />
                     </motion.a>
