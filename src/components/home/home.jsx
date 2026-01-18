@@ -58,7 +58,7 @@ const Home = () => {
                 initial="hidden"
                 animate="visible"
             >
-                <motion.h1 variants={itemVariants}> <span>I’m Vasilis |</span> <span>Web Developer</span> </motion.h1>
+                <motion.h1 variants={itemVariants}> <span>I’m Vasilis</span> <span className="home-text-info">|</span> <span>Web Developer</span> </motion.h1>
 
                 <motion.p variants={itemVariants}>
                     I’m a Frontend Developer focused on building clean, responsive, and

@@ -40,6 +40,8 @@
         @include desktop {
             margin-bottom: 60px;
 
+
+
             h1 {
                 font-size: 2.6rem;
                 text-align: center;
@@ -60,10 +62,13 @@
             order: 2;
             margin-bottom: 60px;
 
+
             h1 {
                 width: 80%;
                 text-align: center;
+
             }
+
         }
 
         @include landscape {
@@ -72,6 +77,11 @@
 
             span {
                 display: block;
+
+            }
+
+            .home-text-info {
+                display: none;
             }
 
             h1 {
@@ -86,6 +96,10 @@
 
             span {
                 display: block;
+            }
+
+            .home-text-info {
+                display: none;
             }
 
             h1 {
